@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-visuals
+      name: '@local/dsh-visuals'

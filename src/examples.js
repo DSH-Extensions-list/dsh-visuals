@@ -1,0 +1,9 @@
+export const examples = [
+  { name: 'At a glance', source: 'metrics\ntitle A quieter, faster release\ncaption Illustrative release measurements\nResponse time | 184 ms | 23% faster | 340, 290, 240, 205, 184\nSuccessful requests | 99.98% | Above the 99.9% target\nActive users | 12,480 | +1,240 this month' },
+  { name: 'Compare values', source: 'bars\ntitle Where the monthly budget goes\nunit ₹\ncaption Illustrative costs\nInfrastructure | 8400 | Compute and storage\nDesign tools | 3200 | Team workspace\nMonitoring | 1800 | Logs and alerts\nCredits | -1200 | Provider credit' },
+  { name: 'Show a trend', source: 'line\ntitle Three ways training can unfold\ncaption Illustrative loss values; lower is better\nx-axis [0, 1, 2, 3, 4, 5, 6]\nline "Healthy" [2.8, 2.1, 1.5, 1.1, 0.8, 0.6, 0.5]\nline "Stalled" [2.8, 2.6, 2.5, 2.5, 2.4, 2.4, 2.4]\nline "Unstable" [2.8, 2.2, 2.9, 3.5, 4.3, 5.1, 6.2]' },
+  { name: 'Explain a process', source: 'flowchart LR\ntitle From a question to a useful answer\nA[Ask a question] --> B[Gather evidence]\nB --> C{Enough detail?}\nC -->|Yes| D[Explain with visuals]\nC -->|No| E[Clarify the question]\nE --> B' },
+  { name: 'Plan over time', source: 'timeline\ntitle A thoughtful first release\nDiscover | Oct 7 | Understand the reader and their questions\nBuild | Oct 10 | Bring the core visuals into chat\nVerify | Oct 14 | Exercise real conversations and edge cases\nRelease | Oct 17 | Package, document and share' },
+  { name: 'Parts of a whole', source: 'donut\ntitle Time well spent\nunit hours\ncaption Illustrative allocation across a project\nImplementation | 42\nResearch | 24\nVerification | 22\nDocumentation | 12' },
+  { name: 'Guide a task', source: 'steps\ntitle Make a pour-over coffee\nPrepare | 2 min | Heat water to 94°C and rinse the filter\nBloom | 30 sec | Wet 20 g of grounds with 40 g of water\nPour | 2 min | Add water slowly to reach 320 g\nEnjoy | 1 min | Let the last water drain before serving' },
+];

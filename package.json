@@ -1,0 +1,59 @@
+{
+  "name": "@local/dsh-visuals",
+  "version": "0.1.2",
+  "description": "Inline charts and diagrams for DeepSeek Harness, with local rendering and an original visual design.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/host.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "icon.svg",
+    "DESIGN.md",
+    "VALIDATION.md"
+  ],
+  "icon": "icon.svg",
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.js",
+    "preview": "node scripts/preview.mjs",
+    "test:composition": "node --expose-internals scripts/composition-smoke.mjs"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-zenuml": "1.0.1",
+    "dompurify": "3.4.16",
+    "esbuild": "0.25.12",
+    "jsdom": "26.1.0",
+    "mdast-util-from-markdown": "2.0.3",
+    "mdast-util-gfm": "3.1.0",
+    "mermaid": "12.1.0",
+    "micromark-extension-gfm": "3.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "overrides": {
+    "katex": "0.18.2"
+  }
+}
